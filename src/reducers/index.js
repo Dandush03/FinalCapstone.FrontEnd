@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 
-import Sample from './sample';
+import LoadingReducers from './loadingReducers';
 
 export default combineReducers({
-  sample: Sample,
+  loadingItems: LoadingReducers,
 });

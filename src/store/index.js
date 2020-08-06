@@ -6,7 +6,7 @@ import thunk from 'redux-thunk';
 import reducers from '../reducers';
 
 const initState = {
-  sample: {},
+  loadingItems: 0,
 };
 
 export default function configureStore() {

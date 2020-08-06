@@ -10,7 +10,7 @@ import './components';
 import { Home } from './pages';
 
 // Assets
-import './assets/stylesheets/main.scss';
+import './assets/stylesheets/Main.scss';
 
 // Services
 import * as serviceWorker from './serviceWorker';

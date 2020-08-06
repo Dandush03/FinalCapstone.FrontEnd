@@ -2,11 +2,16 @@ import React from 'react';
 import logo from '../assets/images/logo.svg';
 import '../assets/stylesheets/App.scss';
 
-function App() {
+// Components
+import { Img } from '../containers';
+import Loading from './Loading';
+
+export default function Home() {
   return (
     <div className="app">
+      <Loading />
       <header className="app-header">
-        <img src={logo} className="app-logo" alt="logo" />
+        <Img imgUrl={logo} imgClass="app-logo" imgAlt="logo" />
         <p>
           Edit
           {' '}
@@ -26,5 +31,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
