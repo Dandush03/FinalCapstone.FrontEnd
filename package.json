@@ -1,15 +1,18 @@
 {
   "name": "dev-webs",
-  "version": "0.1.1",
-  "private": true,
-  "repository":
-   { "url": "https://github.com/Dandush03/dev-webs-redux",
-     "type": "git" },
-  "author": { 
-    "name": "Daniel Laloush", 
-    "email": "info@dev-webs.net" 
+  "version": "0.1.2",
+  "private": false,
+  "repository": {
+    "url": "https://github.com/Dandush03/dev-webs-redux",
+    "type": "git"
   },
-  "bugs": { "url": "https://github.com/Dandush03/dev-webs-redux/issues" },
+  "author": {
+    "name": "Daniel Laloush",
+    "email": "info@dev-webs.net"
+  },
+  "bugs": {
+    "url": "https://github.com/Dandush03/dev-webs-redux/issues"
+  },
   "license": "MIT",
   "readmeFilename": "README.md",
   "homepage": "https://dev-webs.net",
