@@ -2,6 +2,7 @@
   "name": "dev-webs",
   "version": "0.1.3",
   "private": false,
+  "proxy": "http://localhost:3001",
   "repository": {
     "url": "https://github.com/Dandush03/dev-webs-redux",
     "type": "git"

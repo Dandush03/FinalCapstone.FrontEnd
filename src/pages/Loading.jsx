@@ -5,6 +5,8 @@ import { Loading } from '../components';
 
 export default () => {
   const items = useSelector((state) => state.loadingItems);
+  const user = useSelector((state) => state.user);
+
   const [time, setTime] = useState(false);
   const [closePage, setClosePage] = useState(false);
   const [loaded, setloaded] = useState(false);

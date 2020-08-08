@@ -1,7 +1,11 @@
 import { combineReducers } from 'redux';
 
-import LoadingReducers from './loadingReducers';
+import LoadingReducer from './loadingReducer';
+import UserReducer from './userReducer';
+import ErrorMessagesReducer from './errorMessagesReducer';
 
 export default combineReducers({
-  loadingItems: LoadingReducers,
+  loadingItems: LoadingReducer,
+  user: UserReducer,
+  errorMessages: ErrorMessagesReducer,
 });

@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Assets
-import '../assets/stylesheets/Loading.scss';
 import Logo from '../assets/images/SimpleLog.svg';
 
 export default function loading({ time, loaded }) {

@@ -1,5 +1,6 @@
 import Img from './Img';
+import LogInForm from './LogInForm';
 
 export {
-  Img,
+  Img, LogInForm,
 };

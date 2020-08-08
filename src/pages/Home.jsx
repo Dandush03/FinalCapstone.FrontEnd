@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+
+// Action
+import { getStatus } from '../actions/userAction';
+
+// Assets
 import logo from '../assets/images/logo.svg';
-import '../assets/stylesheets/App.scss';
 
 // Components
 import { Img } from '../containers';
 import Loading from './Loading';
 
 export default function Home() {
+  const dispath = useDispatch();
+
+  useEffect(() => {
+    const token = sessionStorage.getItem('token');
+    if (token) {
+      dispath(getStatus(token));
+    }
+  }, [dispath]);
+
   return (
     <div className="app">
       <Loading />
