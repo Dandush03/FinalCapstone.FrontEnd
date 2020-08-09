@@ -1,0 +1,116 @@
+@import './Global';
+
+
+$botton-c: #000;
+$botton-bg: $blue;
+$error: rgb(219, 0, 0);
+$white: #f5f5f5;
+
+@keyframes openForm {
+  from {
+    bottom: 70px;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 0;
+  }
+
+  to {
+    bottom: 70px;
+    height: 375px;
+    overflow: hidden;
+    position: fixed;
+    width: 70%;
+  }
+}
+
+.task-form {
+  animation: openForm ease-in .4s;
+  background-color: $white;
+  border: 1px $blue outset;
+  border-top-right-radius: 10px;
+  bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  height: 375px;
+  justify-content: space-between;
+  left: 0;
+  max-height: 80%;
+  overflow: auto;
+  position: fixed;
+  width: 70%;
+
+  h1,
+  span,
+  button {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    background-color: $botton-bg;
+    font-size: 150%;
+    line-height: 100%;
+    padding: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+  }
+
+  div {
+    margin: 14px 20px;
+    width: calc(100% - 40px);
+
+    select,
+    input,
+    textarea {
+      border-radius: 10px;
+      border-style: solid;
+      border-width: 1px;
+      font-family: $font;
+      font-size: large;
+      padding: 5px;
+      width: 100%;
+    }
+
+    &:last-child {
+      margin-bottom: 5px;
+      margin-top: 0;
+    }
+  }
+
+  button {
+    background-color: $botton-bg;
+    border-radius: 10px;
+    color: $botton-c;
+    font-family: $font;
+    font-size: 120%;
+    font-weight: bolder;
+    margin: auto;
+    padding: 10px 60px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  label {
+    position: relative;
+  }
+
+  .request {
+    font-size: 75%;
+    left: 10px;
+    position: absolute;
+    text-align: left;
+    top: calc(100% + 10px);
+    width: 100%;
+
+    &.bad {
+      color: $error;
+    }
+  }
+}
