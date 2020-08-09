@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512"
+   height="350"
+   viewBox="0 0 135.46666 92.604575"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="progress.svg">
+  <defs
+     id="defs2">
+    <rect
+       id="rect23"
+       height="9.7244625"
+       width="44.128998"
+       y="106.64054"
+       x="23.786987" />
+    <filter
+       inkscape:label="Black Light"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Light areas turn to black"
+       style="color-interpolation-filters:sRGB"
+       id="filter93">
+      <feColorMatrix
+         type="luminanceToAlpha"
+         result="result2"
+         id="feColorMatrix85" />
+      <feComposite
+         k4="0"
+         k2="0"
+         k1="0"
+         in2="SourceGraphic"
+         operator="arithmetic"
+         in="result2"
+         k3="2"
+         result="result4"
+         id="feComposite87" />
+      <feBlend
+         in="result4"
+         mode="multiply"
+         result="result3"
+         in2="result2"
+         id="feBlend89" />
+      <feComposite
+         in2="SourceGraphic"
+         operator="in"
+         in="result3"
+         id="feComposite91" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="114.97146"
+     inkscape:cy="368.69657"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g34"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Items">
+    <g
+       transform="translate(4.4278875e-7,-9.6396343)"
+       id="g34">
+      <text
+         xml:space="preserve"
+         id="text21"
+         style="font-size:6.64416px;line-height:1.25;font-family:HelveticaNeue;-inkscape-font-specification:HelveticaNeue;white-space:pre;shape-inside:url(#rect23);fill:#e6e6e6;"
+         transform="matrix(3.2406427,0,0,3.2406427,-75.129617,-271.20191)"><tspan
+           x="23.787109"
+           y="112.92522"><tspan
+             style="shape-inside:url(#rect23)">Your Progress</tspan></tspan></text>
+      <g
+         id="g110"
+         transform="matrix(6.8941141,0,0,7.1057966,-113.9575,-643.74205)">
+        <g
+           id="g23"
+           transform="matrix(1.0612093,0,0,1.056417,-1.4267892,-5.8034044)">
+          <g
+             id="g24"
+             transform="matrix(0.6622517,0,0,0.6622517,7.78731,31.867093)">
+            <path
+               sodipodi:nodetypes="sssscs"
+               d="m 31.523214,98.632889 c 0,2.338001 -1.895329,4.233331 -4.233333,4.233331 -2.338004,0 -4.233332,-1.89533 -4.233333,-4.233331 0,-2.338005 1.895328,-4.233333 4.233333,-4.233333 0.03414,0 0.04145,4.292124 0.04145,4.292124 0,0 4.191884,-0.08189 4.191884,-0.05879 z"
+               style="fill:#e6e6e6;stroke-width:0.269974;stroke-dasharray:0.269974, 3.2397"
+               id="path90" />
+            <path
+               id="path90-4"
+               style="fill:#e6e6e6;stroke-width:0.271167;stroke-dasharray:0.271167, 3.25401"
+               d="m 28.239445,93.426714 c 2.315813,-0.03715 4.204442,1.615005 4.246557,4.256351 0,0 -3.886537,0.05693 -4.180462,0.05879 -0.01925,-1.570274 -0.06609,-4.315139 -0.06609,-4.315139 z"
+               sodipodi:nodetypes="cscc" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
