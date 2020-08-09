@@ -9,7 +9,7 @@ import { getStatus } from '../actions/userAction';
 import logo from '../assets/images/logo.svg';
 
 // Components
-import { Img } from '../containers';
+import { Img, Footer } from '../containers';
 import Loading from './Loading';
 
 export default function Home() {
@@ -48,6 +48,7 @@ export default function Home() {
           Learn React
         </a>
       </header>
+      <Footer />
     </div>
   );
 }

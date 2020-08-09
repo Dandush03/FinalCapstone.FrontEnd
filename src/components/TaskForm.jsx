@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 
-// Styles
-import '../assets/styles/taskForm.scss';
-
 export default function TaskForm() {
   const [statusMsg, setStatusMsg] = useState(null);
   const [status, setStatus] = useState(null);

@@ -3,9 +3,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 
 // Action
-import {
+/* import {
   searchTask, openPopUp, closePopUp, startTimer,
-} from '../actions/task';
+} from '../actions/task'; */
 
 // Javascripts
 import { timeToString } from '../javascript/time';
@@ -41,7 +41,6 @@ function useInterval(callback, delay) {
 
 export default function Footer() {
   const task = useSelector((state) => state.task);
-  const location = useSelector((state) => state.location);
   const timer = useSelector((state) => state.timer);
 
   const dispatch = useDispatch();
@@ -52,7 +51,7 @@ export default function Footer() {
     const { active, current } = task;
     if (active) {
       setTime(timeToString(timer.timer));
-      dispatch(startTimer(current.start, current.category_id));
+      // dispatch(startTimer(current.start, current.category_id));
     }
   };
 
@@ -61,18 +60,19 @@ export default function Footer() {
   }, 1000);
 
   useEffect(() => {
-    dispatch(searchTask());
+    // dispatch(searchTask());
   }, [dispatch]);
 
   const signOut = () => {
-    window.location.replace(`${location}/users/sign_out`);
+    //window.location.replace(`${location}/users/sign_out`);
   };
 
+  console.log(task);
   const popUp = () => {
     if (task.taskPop) {
-      return dispatch(closePopUp());
+      // return dispatch(closePopUp());
     }
-    return dispatch(openPopUp());
+    // return dispatch(openPopUp());
   };
 
   return (

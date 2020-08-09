@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes, { oneOfType } from 'prop-types';
 
-import '../assets/styles/taskPopUp.scss';
-
 const validation = (id) => {
   const data = { task: { end: Date.now() } };
   const config = {

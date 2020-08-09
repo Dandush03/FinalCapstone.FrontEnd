@@ -9,6 +9,12 @@ const initState = {
   logged: false,
   loadingItems: 0,
   errorMessages: null,
+  task: { active: false, current: {}, taskPop: false },
+  taskList: [{}],
+  taskByCategory: {
+    working: [], cleaning: [], sleeping: [], studying: [],
+  },
+  timer: { time: null, category: null },
 };
 
 export default function configureStore() {

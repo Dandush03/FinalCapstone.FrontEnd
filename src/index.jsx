@@ -8,7 +8,7 @@ import appHeight from './javascript/documentHeight';
 // Components
 import './components';
 import {
-  Home, NotFound, Tasks, LogIn,
+  Home, NotFound, LogIn,
 } from './pages';
 
 // Assets
@@ -26,7 +26,6 @@ ReactDOM.render(
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/login" exact component={LogIn} />
-        <Route path="/tasks" exact component={Tasks} />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
