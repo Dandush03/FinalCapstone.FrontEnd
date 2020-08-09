@@ -29,6 +29,7 @@ export default function TaskForm() {
       setStatusMsg('*Can\'t be Bigger than 30 Char or Empty');
       return;
     }
+    const token = sessionStorage.getItem('token');
 
     const config = {
       method: form.method,
@@ -36,7 +37,9 @@ export default function TaskForm() {
       cache: 'no-cache',
       credentials: 'same-origin',
       headers: {
+        Accept: 'application/json',
         'Content-Type': 'application/json',
+        Authorization: token,
       },
       referrerPolicy: 'no-referrer',
       body: JSON.stringify(newData),

@@ -10,6 +10,7 @@ export const ADD_LOADING_ITEM = 'ADD_LOADING_ITEM';
 export const REMOVE_LOADING_ITEM = 'REMOVE_LOADING_ITEM';
 export const GET_LOADING_STAGE = 'GET_LOADING_STAGE';
 
+export const SEARCH_OPEN_TASKS = 'SEARCH_OPEN_TASKS';
 export const OPEN_TASK = 'OPEN_TASK';
 export const STATUS_TASK = 'STATUS_TASK';
 export const CLOSE_TASK = 'CLOSE_TASK';

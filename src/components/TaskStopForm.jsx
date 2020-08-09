@@ -3,13 +3,16 @@ import PropTypes, { oneOfType } from 'prop-types';
 
 const validation = (id) => {
   const data = { task: { end: Date.now() } };
+  const token = sessionStorage.getItem('token');
   const config = {
     method: 'PATCH',
     mode: 'cors',
     cache: 'no-cache',
     credentials: 'same-origin',
     headers: {
+      Accept: 'application/json',
       'Content-Type': 'application/json',
+      Authorization: token,
     },
     referrerPolicy: 'no-referrer',
     body: JSON.stringify(data),

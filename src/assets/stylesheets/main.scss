@@ -21,3 +21,8 @@ body {
 main {
   height: var(--app-height);
 }
+
+button,
+a {
+  cursor: pointer;
+}

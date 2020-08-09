@@ -4,7 +4,7 @@ const getUserSuccessfully = () => ({
   type: ActionTypes.USER_LOGIN,
 });
 
-const getUserFail = (json) => ({
+const getUserLogout = (json) => ({
   type: ActionTypes.USER_LOGOUT,
   payload: json,
 });
@@ -24,6 +24,9 @@ const loginUser = (data) => {
     const url = '/api/auth/login';
     const config = {
       method: 'POST',
+      mode: 'cors',
+      cache: 'no-cache',
+      credentials: 'same-origin',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
@@ -49,6 +52,9 @@ const getStatus = (token) => (dispatch) => {
   const url = '/api/auth';
   const config = {
     method: 'GET',
+    mode: 'cors',
+    cache: 'no-cache',
+    credentials: 'same-origin',
     headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json',
@@ -61,12 +67,12 @@ const getStatus = (token) => (dispatch) => {
         return (dispatch(getUserSuccessfully()));
       }
       sessionStorage.removeItem('token');
-      return (dispatch(getUserFail()));
+      return (dispatch(getUserLogout()));
     })
     // eslint-disable-next-line no-console
     .catch((err) => console.log(err));
 };
 
 export {
-  loginUser, getStatus, ErrMsg, ErrClear,
+  loginUser, getStatus, ErrMsg, ErrClear, getUserLogout,
 };

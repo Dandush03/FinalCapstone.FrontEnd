@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import { NavLink, withRouter } from 'react-router-dom';
 
 // Action
 import {
   searchTask, openPopUp, closePopUp, startTimer,
-} from '../actions/task';
+} from '../actions/taskAction';
+import { getUserLogout } from '../actions/userAction';
 
 // Javascripts
 import { timeToString } from '../javascript/time';
@@ -40,7 +41,7 @@ function useInterval(callback, delay) {
   }, [delay]);
 }
 
-export default function Footer() {
+const Footer = () => {
   const task = useSelector((state) => state.task);
   const timer = useSelector((state) => state.timer);
 
@@ -52,7 +53,7 @@ export default function Footer() {
     const { active, current } = task;
     if (active) {
       setTime(timeToString(timer.timer));
-      // dispatch(startTimer(current.start, current.category_id));
+      dispatch(startTimer(current.start, current.category_id));
     }
   };
 
@@ -61,11 +62,12 @@ export default function Footer() {
   }, 1000);
 
   useEffect(() => {
-    // dispatch(searchTask());
+    dispatch(searchTask());
   }, [dispatch]);
 
   const signOut = () => {
-    // window.location.replace(`${location}/users/sign_out`);
+    sessionStorage.removeItem('token');
+    dispatch(getUserLogout());
   };
 
   const popUp = () => {
@@ -74,6 +76,7 @@ export default function Footer() {
     }
     return dispatch(openPopUp());
   };
+
   return (
     <footer>
       <button type="button" onClick={popUp} className={task.active ? 'warning' : ''}>
@@ -92,4 +95,6 @@ export default function Footer() {
       </button>
     </footer>
   );
-}
+};
+
+export default withRouter(Footer);
