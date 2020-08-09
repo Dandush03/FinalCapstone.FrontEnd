@@ -3,13 +3,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 
 // Action
-import getUser from '../actions/user';
 import {
   searchTask, openPopUp, closePopUp, startTimer,
 } from '../actions/task';
-
-// Styles
-import '../assets/styles/footer.scss';
 
 // Javascripts
 import { timeToString } from '../javascript/time';
@@ -65,7 +61,6 @@ export default function Footer() {
   }, 1000);
 
   useEffect(() => {
-    dispatch(getUser());
     dispatch(searchTask());
   }, [dispatch]);
 

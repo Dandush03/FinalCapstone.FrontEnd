@@ -5,7 +5,7 @@ import { Redirect } from 'react-router-dom';
 // Actions
 import { loginUser, ErrMsg, getStatus } from '../actions/userAction';
 // Components
-import ErrorMsg from './ErrorMsg';
+import ErrorMsg from '../containers/ErrorMsg';
 
 export default function Img() {
   const msg = useSelector((state) => state.errorMessages);
