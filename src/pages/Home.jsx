@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 
 // Action
 import { getStatus } from '../actions/userAction';
@@ -13,13 +14,18 @@ import Loading from './Loading';
 
 export default function Home() {
   const dispath = useDispatch();
+  const user = useSelector((state) => state.logged);
+  const token = sessionStorage.getItem('token');
 
   useEffect(() => {
-    const token = sessionStorage.getItem('token');
     if (token) {
       dispath(getStatus(token));
     }
-  }, [dispath]);
+  }, [dispath, token]);
+
+  if (!user) {
+    return <Redirect to="/login" />;
+  }
 
   return (
     <div className="app">

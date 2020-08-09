@@ -6,6 +6,6 @@ import ErrorMessagesReducer from './errorMessagesReducer';
 
 export default combineReducers({
   loadingItems: LoadingReducer,
-  user: UserReducer,
+  logged: UserReducer,
   errorMessages: ErrorMessagesReducer,
 });

@@ -1,12 +1,11 @@
 import * as ActionTypes from './actionsType';
 
-const getUserSuccessfully = (json) => ({
+const getUserSuccessfully = () => ({
   type: ActionTypes.USER_LOGIN,
-  payload: json,
 });
 
 const getUserFail = (json) => ({
-  type: ActionTypes.USER_LOGIN,
+  type: ActionTypes.USER_LOGOUT,
   payload: json,
 });
 
@@ -20,9 +19,9 @@ const ErrClear = () => ({
 });
 
 const loginUser = (data) => {
-  const userData = { user: data };
+  const userData = data;
   return (dispatch) => {
-    const url = '/api/login';
+    const url = '/api/auth/login';
     const config = {
       method: 'POST',
       headers: {
@@ -32,50 +31,40 @@ const loginUser = (data) => {
       body: JSON.stringify(userData),
     };
     fetch(url, config)
-      .then((response) => {
-        const token = response.headers.get('authorization');
-        sessionStorage.setItem('token', token);
-        return response.json();
-      })
+      .then((response) => response.json())
       .then((json) => {
-        if (json.error) {
-          sessionStorage.removeItem('token');
-          dispatch(ErrMsg(json.error));
-          return;
+        if (json.auth_token) {
+          const token = json.auth_token;
+          sessionStorage.setItem('token', token);
+          return dispatch(getUserSuccessfully());
         }
-        dispatch(getUserSuccessfully(json));
+        return (dispatch(ErrMsg(json.message)));
       })
+      // eslint-disable-next-line no-console
       .catch((err) => console.log(err));
   };
 };
 
-const getStatus = (token) => {
-  return (dispatch) => {
-    const url = '/api/login';
-    const config = {
-      method: 'GET',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-        Authorization: token,
-      },
-    };
-    fetch(url, config)
-      .then((response) => {
-        console.log(response);
-        return response.json();
-      })
-      .then((json) => {
-        console.log(json);
-        /* if (json.error) {
-          sessionStorage.removeItem('token');
-          dispatch(ErrMsg(json.error));
-          return;
-        }
-        dispatch(getUserSuccessfully(json)); */
-      })
-      .catch((err) => console.log(err));
+const getStatus = (token) => (dispatch) => {
+  const url = '/api/auth';
+  const config = {
+    method: 'GET',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+      Authorization: token,
+    },
   };
+  fetch(url, config)
+    .then((response) => {
+      if (response.status === 200) {
+        return (dispatch(getUserSuccessfully()));
+      }
+      sessionStorage.removeItem('token');
+      return (dispatch(getUserFail()));
+    })
+    // eslint-disable-next-line no-console
+    .catch((err) => console.log(err));
 };
 
 export {

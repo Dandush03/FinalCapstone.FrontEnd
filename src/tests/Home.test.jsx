@@ -9,7 +9,7 @@ import Home from '../pages/Home';
 
 const store = storeConfig();
 test('renders learn react link', () => {
-  const { getByText } = render(
+  const { getByAltText } = render(
     <Provider store={store}>
       <BrowserRouter>
         <Switch>
@@ -18,6 +18,7 @@ test('renders learn react link', () => {
       </BrowserRouter>
     </Provider>,
   );
-  const linkElement = getByText(/learn react/i);
+
+  const linkElement = getByAltText(/logo/i);
   expect(linkElement).toBeInTheDocument();
 });
