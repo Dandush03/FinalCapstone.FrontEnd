@@ -3,9 +3,9 @@ import { Provider } from 'react-redux';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { render } from '@testing-library/react';
 
-import storeConfig from '../store';
+import storeConfig from '../../store';
 
-import Home from '../pages/Home';
+import Loading from '../../pages/Loading';
 
 const store = storeConfig();
 test('renders learn react link', () => {
@@ -13,12 +13,11 @@ test('renders learn react link', () => {
     <Provider store={store}>
       <BrowserRouter>
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route path="/" exact component={Loading} />
         </Switch>
       </BrowserRouter>
     </Provider>,
   );
-
-  const linkElement = getByAltText(/logo/i);
+  const linkElement = getByAltText(/Logo Img/i);
   expect(linkElement).toBeInTheDocument();
 });
