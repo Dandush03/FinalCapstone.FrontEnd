@@ -10,9 +10,6 @@ import { TasksList } from '../components/index';
 // Action
 import getTasks from '../actions/tasksList';
 
-// Import Assets
-import '../assets/styles/App.scss';
-
 class Tasks extends Component {
   constructor(props) {
     super(props);
