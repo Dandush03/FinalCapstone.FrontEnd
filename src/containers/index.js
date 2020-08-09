@@ -1,6 +1,7 @@
 import Img from './Img';
-import LogInForm from './LogInForm';
+import Footer from './Footer';
+import ErrorMsg from './ErrorMsg';
 
 export {
-  Img, LogInForm,
+  Img, Footer, ErrorMsg,
 };

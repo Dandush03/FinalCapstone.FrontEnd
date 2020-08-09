@@ -7,8 +7,9 @@ import appHeight from './javascript/documentHeight';
 
 // Components
 import './components';
-import { Home } from './pages';
-import { LogInForm } from './containers';
+import {
+  Home, NotFound, Tasks, LogIn,
+} from './pages';
 
 // Assets
 import './assets/stylesheets/Main.scss';
@@ -24,7 +25,9 @@ ReactDOM.render(
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/login" exact component={LogInForm} />
+        <Route path="/login" exact component={LogIn} />
+        <Route path="/tasks" exact component={Tasks} />
+        <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
   </Provider>,
