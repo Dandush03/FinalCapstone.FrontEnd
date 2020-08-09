@@ -8,7 +8,7 @@ import appHeight from './javascript/documentHeight';
 // Components
 import './components';
 import {
-  Home, NotFound, LogIn, Tasks
+  Home, NotFound, LogIn, Tasks,
 } from './pages';
 
 // Assets

@@ -1,51 +1,36 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
-import PropTypes from 'prop-types';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 
 // Import Components
 import { TasksList } from '../components/index';
 
 // Action
-import getTasks from '../actions/tasksList';
+import getTasks from '../actions/tasksListAction';
+import { Footer } from '../containers';
+import Loading from './Loading';
 
-class Tasks extends Component {
-  constructor(props) {
-    super(props);
-    this.login = props.login;
+export default function Tasks() {
+  const user = useSelector((state) => state.logged);
+  const taskList = useSelector((state) => state.taskList);
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getTasks());
+  }, [dispatch]);
+
+  if (!user) {
+    return <Redirect to="/login" />;
   }
 
-  componentDidMount() {
-    const { props: { getTasks } } = this;
-    getTasks();
-  }
-
-  render() {
-    const { props: { taskList, login } } = this;
-    this.login = login;
-    if (!this.login) {
-      return <Redirect to="/" />;
-    }
-    return (
+  return (
+    <>
+      <Loading />
       <main>
         <TasksList data={taskList} />
       </main>
-    );
-  }
+      <Footer />
+    </>
+  );
 }
-
-Tasks.propTypes = {
-  taskList: PropTypes.arrayOf(PropTypes.object).isRequired,
-  getTasks: PropTypes.func.isRequired,
-  login: PropTypes.bool.isRequired,
-};
-
-const structeredSelector = createStructuredSelector({
-  taskList: (state) => state.taskList,
-  login: (state) => state.user.login,
-});
-
-const mapDispatchToProps = { getTasks };
-
-export default connect(structeredSelector, mapDispatchToProps)(Tasks);

@@ -18,3 +18,11 @@ export const TASK_POP_OPEN = 'TASK_POP_OPEN';
 export const TASK_POP_CLOSE = 'TASK_POP_CLOSE';
 
 export const UPDATE_TIME = 'UPDATE_TIME';
+
+export const GET_TASKS = 'GET_TASKS';
+export const GET_TASKS_SUCCESS = 'GET_TASKS_SUCCESS';
+export const GET_TASKS_FAILD = 'GET_TASKS_FAILD';
+
+export const GET_TASK_BY = 'GET_TASK_BY';
+export const GET_TASK_BY_SUCCESS = 'GET_TASK_BY_SUCCESS';
+export const GET_TASK_BY_FAIL = 'GET_TASK_BY_FAIL';

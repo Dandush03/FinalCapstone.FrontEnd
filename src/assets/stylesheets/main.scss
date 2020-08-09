@@ -1,8 +1,14 @@
 @import './App';
 @import './Loading';
+@import './Header.scss';
 @import './Footer';
 @import './TaskForm';
 @import './TaskPopUp';
+@import './Achivements';
+@import './TasksList';
+@import './Progress';
+
+$bg: #f5f5f5;
 
 :root {
   --app-height: 100%;
@@ -19,6 +25,7 @@ body {
 }
 
 main {
+  background-color: $bg;
   height: var(--app-height);
 }
 
