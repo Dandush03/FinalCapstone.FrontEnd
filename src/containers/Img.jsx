@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 
@@ -12,14 +12,18 @@ export default function Img({ imgUrl, imgAlt, imgClass }) {
     dispatch(removeItem());
   };
 
-  const image = <img src={imgUrl} alt={imgAlt} className={imgClass} onLoad={loadedHandler} />;
-
-  useEffect(() => {
+  const loadingHandler = () => {
     dispatch(addItem());
-  }, [dispatch]);
+  };
 
   return (
-    image
+    <img
+      src={imgUrl}
+      alt={imgAlt}
+      className={imgClass}
+      onLoad={loadedHandler}
+      onLoadCapture={loadingHandler}
+    />
   );
 }
 

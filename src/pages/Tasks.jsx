@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 
 // Import Components
-import { TasksList } from '../components/index';
+import { TasksList, Header } from '../components/index';
 
 // Action
 import getTasks from '../actions/tasksListAction';
@@ -26,6 +26,7 @@ export default function Tasks() {
 
   return (
     <>
+      <Header />
       <Loading />
       <main>
         <TasksList data={taskList} />

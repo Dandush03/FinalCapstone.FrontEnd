@@ -29,6 +29,18 @@ main {
   height: var(--app-height);
 }
 
+header {
+  background-color: $blue;
+  height: 50px;
+  width: 100vw;
+}
+
+footer {
+  background-color: $gray;
+  height: 70px;
+  width: 100vw;
+}
+
 button,
 a {
   cursor: pointer;

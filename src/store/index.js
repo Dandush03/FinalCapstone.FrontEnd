@@ -6,7 +6,7 @@ import thunk from 'redux-thunk';
 import reducers from '../reducers';
 
 const initState = {
-  logged: false,
+  logged: true,
   loadingItems: 0,
   errorMessages: null,
   task: { active: false, current: {}, taskPop: false },
