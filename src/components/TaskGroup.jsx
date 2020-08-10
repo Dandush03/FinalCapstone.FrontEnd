@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 import React, {
-  useEffect, useState,
+  useEffect, useState, useRef, useCallback,
 } from 'react';
 import PropTypes from 'prop-types';
 import Task from './Task';
@@ -16,12 +16,22 @@ export default function TasksGroup({ data, date }) {
     setOpened(true);
   };
 
+  const callOnLoading = useCallback(() => {
+    if (opened) {
+      setOpened(false);
+      return;
+    }
+    setOpened(true);
+  }, [opened]);
+
+  const counter = useRef(0);
   useEffect(() => {
     const currentDate = new Date(Date.now()).toDateString();
-    if (date === currentDate) {
-      openedHandler();
+    if (date === currentDate && counter.current === 0) {
+      counter.current += 1;
+      callOnLoading();
     }
-  }, [date]);
+  }, [date, callOnLoading]);
 
   const Tasks = data.map((t) => <Task data={t} key={`Task-${t.id}`} />);
   return (

@@ -7,7 +7,7 @@ import { getStatus } from '../actions/userAction';
 
 // Components
 import { Header } from '../components';
-import { Img, Footer } from '../containers';
+import { Footer, Progress } from '../containers';
 import Loading from './Loading';
 
 export default function Home() {
@@ -29,8 +29,8 @@ export default function Home() {
     <>
       <Header />
       <Loading />
-      <main>
-        {}
+      <main className="App">
+        <Progress />
       </main>
       <Footer />
     </>

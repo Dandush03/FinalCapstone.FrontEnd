@@ -6,6 +6,7 @@ import ErrorMessagesReducer from './errorMessagesReducer';
 import TaskReducer from './taskReducer';
 import Timer from './timerReducer';
 import tasksListReducer from './tasksListReducer';
+import TaskByCategories from './taskByCategoriesReducer';
 
 export default combineReducers({
   loadingItems: LoadingReducer,
@@ -14,4 +15,5 @@ export default combineReducers({
   task: TaskReducer,
   timer: Timer,
   taskList: tasksListReducer,
+  taskByCategory: TaskByCategories,
 });

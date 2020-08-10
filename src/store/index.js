@@ -12,7 +12,7 @@ const initState = {
   task: { active: false, current: {}, taskPop: false },
   taskList: [{}],
   taskByCategory: {
-    working: [], cleaning: [], sleeping: [], studying: [],
+    working: [], studing: [], eating: [], sleeping: [],
   },
   timer: { time: null, category: null },
 };

@@ -1,4 +1,3 @@
-@import './App';
 @import './Loading';
 @import './Header.scss';
 @import './Footer';
@@ -20,13 +19,19 @@ $bg: #f5f5f5;
 
 body {
   -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
+  font-family: $font;
   margin: 0;
   max-width: 100vw;
+  height: calc(var(--app-height) + 50px + 70px);
+  overflow: hidden;
+  width: 100vw;
 }
 
 main {
   background-color: $bg;
   height: var(--app-height);
+  overflow: auto;
+  width: 100vw;
 }
 
 header {
@@ -44,4 +49,18 @@ footer {
 button,
 a {
   cursor: pointer;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Light';
+  font-style: normal;
+  font-weight: light;
+  src: font-url('./fonts/HelveticaNeue-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Chathura Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: font-url('./fonts/Chathura-Regular.ttf') format('truetype');
 }
