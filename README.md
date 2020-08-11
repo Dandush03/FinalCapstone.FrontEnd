@@ -11,7 +11,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
- <h2 align="center"> Ruby on Rails With React and Redux Task App </h2>
+ <h2 align="center"> Ruby on Rails With React and Reduax Task App </h2>
 
   <p align="center">
     <br />
