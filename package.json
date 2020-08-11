@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": false,
   "root": "build/",
+  "routes": {
+    "/**": "index.html"
+  },
   "proxies": {
     "/api/": {
-      "origin": "https://dl-final.herokuapp.com/"
+      "origin": "${API_URL}"
     }
   },
-  "proxy": "https://dl-final.herokuapp.com/",
   "repository": {
     "url": "https://github.com/Dandush03/FinalCapstone.BackEnd",
     "type": "git"
