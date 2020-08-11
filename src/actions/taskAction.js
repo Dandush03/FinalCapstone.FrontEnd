@@ -45,7 +45,7 @@ function searchTask() {
       return dispatch(getUserLogout());
     }
 
-    const url = '/api/searcher';
+    const url = 'https://dl-final.herokuapp.com/api/searcher';
     const config = {
       method: 'GET',
       mode: 'cors',

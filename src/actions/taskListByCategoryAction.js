@@ -31,7 +31,7 @@ function loadProgressData(range) {
       Authorization: token,
     },
   };
-  const url = '/api/searcher/by_category_date';
+  const url = 'https://dl-final.herokuapp.com/api/searcher/by_category_date';
   return (dispatch) => {
     dispatch({ type: ActionTypes.GET_TASK_BY });
     Promise.all([

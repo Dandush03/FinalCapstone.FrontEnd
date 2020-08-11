@@ -23,7 +23,7 @@ function getTask() {
       return dispatch(getUserLogout());
     }
 
-    const url = '/api/tasks';
+    const url = 'https://dl-final.herokuapp.com/api/tasks';
     const config = {
       method: 'GET',
       mode: 'cors',

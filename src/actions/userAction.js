@@ -21,7 +21,7 @@ const ErrClear = () => ({
 const loginUser = (data) => {
   const userData = data;
   return (dispatch) => {
-    const url = '/api/auth/login';
+    const url = 'https://dl-final.herokuapp.com/api/auth/login';
     const config = {
       method: 'POST',
       mode: 'cors',
@@ -52,7 +52,7 @@ const loginUser = (data) => {
 const registrateUser = (data) => {
   const userData = data;
   return (dispatch) => {
-    const url = '/api/auth/signup';
+    const url = 'https://dl-final.herokuapp.com/api/auth/signup';
     const config = {
       method: 'POST',
       mode: 'cors',
@@ -81,7 +81,7 @@ const registrateUser = (data) => {
 };
 
 const getStatus = (token) => (dispatch) => {
-  const url = '/api/auth';
+  const url = 'https://dl-final.herokuapp.com/api/auth';
   const config = {
     method: 'GET',
     mode: 'cors',
