@@ -53,15 +53,16 @@ a {
 }
 
 @font-face {
-  font-family: 'Helvetica Neue Light';
+  font-family: 'WorkSans Regular';
   font-style: normal;
   font-weight: light;
-  src: font-url('./fonts/HelveticaNeue-Light.ttf') format('truetype');
+  src: local('WorkSans-Regular'), url(./fonts/WorkSans-Regular.ttf) format('truetype');
+
 }
 
 @font-face {
   font-family: 'Chathura Regular';
   font-style: normal;
   font-weight: normal;
-  src: font-url('./fonts/Chathura-Regular.ttf') format('truetype');
+  src: local('Chathura-Regular'), url(./fonts/Chathura-Regular.ttf) format('truetype');
 }
