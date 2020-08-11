@@ -5,9 +5,13 @@
         "jest": true
     },
     "extends": [
-        "plugin:react/recommended",
-        "airbnb"
+        "eslint:recommended",
+        "plugin:react/recommended"
     ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -19,5 +23,8 @@
         "react"
     ],
     "rules": {
+        "import/no-extraneous-dependencies": 0,
+        "import/no-unresolved": 0,
+        "no-shadow": 0
     }
 }
