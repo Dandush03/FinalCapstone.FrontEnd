@@ -39,6 +39,7 @@ const loginUser = (data) => {
         if (json.auth_token) {
           const token = json.auth_token;
           sessionStorage.setItem('token', token);
+          dispatch(ErrClear());
           return dispatch(getUserSuccessfully());
         }
         return (dispatch(ErrMsg(json.message)));
@@ -69,6 +70,7 @@ const registrateUser = (data) => {
         if (json.auth_token) {
           const token = json.auth_token;
           sessionStorage.setItem('token', token);
+          dispatch(ErrClear());
           return dispatch(getUserSuccessfully());
         }
         return (dispatch(ErrMsg(json.message)));
