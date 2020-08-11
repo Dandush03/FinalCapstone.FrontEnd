@@ -41,6 +41,7 @@ function getTask() {
       .then((json) => dispatch(getTasksSuccess(json)))
       // eslint-disable-next-line no-console
       .catch(() => dispatch(getTasksFail()));
+    return null;
   };
 }
 

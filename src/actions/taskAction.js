@@ -37,7 +37,6 @@ function startTimer(time, category) {
 }
 
 function searchTask() {
-  // eslint-disable-next-line consistent-return
   return (dispatch) => {
     dispatch({ type: ActionType.SEARCH_OPEN_TASKS });
     const token = sessionStorage.getItem('token');
@@ -63,6 +62,7 @@ function searchTask() {
       .then((json) => dispatch(statusTask(json)))
       // eslint-disable-next-line no-console
       .catch((error) => console.log(error));
+    return null;
   };
 }
 

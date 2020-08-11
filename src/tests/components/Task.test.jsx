@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { Task } from '../../components/index';
+import { Task } from '../../components';
 
 test('Renders Task Succesfully', () => {
   const { getByText } = render(<Task data={{ name: 'Daniel' }} />);

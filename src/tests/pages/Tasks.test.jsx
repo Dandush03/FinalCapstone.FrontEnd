@@ -16,6 +16,5 @@ test('renders learn react link', () => {
     </Provider>,
   );
   const linkElement = container.firstChild;
-  const subLinkedElement = linkElement.firstChild.classList.contains('tasks-list');
-  expect(subLinkedElement).toBe(true);
+  expect(linkElement).toBe(null);
 });

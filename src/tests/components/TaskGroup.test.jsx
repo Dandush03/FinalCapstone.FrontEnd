@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { TaskGroup } from '../../components/index';
+import { TaskGroup } from '../../components';
 
 test('Renders TaskGroup Succesfully', () => {
   const { getByText } = render(<TaskGroup data={[{}]} date="test" />);

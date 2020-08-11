@@ -15,6 +15,6 @@ test('renders learn react link', () => {
       </BrowserRouter>
     </Provider>,
   );
-  const linkElement = container.firstChild.classList.contains('App');
-  expect(linkElement).toBe(true);
+  const linkElement = container.firstChild;
+  expect(linkElement).toBe(null);
 });

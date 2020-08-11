@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { TaskForm } from '../../components/index';
+import { TaskForm } from '../../components';
 
 test('Renders TaskForm Succesfully', () => {
   const { getByText } = render(<TaskForm />);
