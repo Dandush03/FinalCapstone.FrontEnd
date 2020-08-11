@@ -5,7 +5,7 @@
   "root": "build/",
   "proxies": {
     "/api/": {
-      "origin": "https://dl-final.herokuapp.com/api/"
+      "origin": "https://dl-final.herokuapp.com/"
     }
   },
   "proxy": "https://dl-final.herokuapp.com/",
