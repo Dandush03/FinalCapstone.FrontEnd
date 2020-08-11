@@ -57,7 +57,7 @@ export default function TaskForm() {
   return (
     <div className="task-form">
       <h1>Start a Task Now!</h1>
-      <form method="POST" action="/api/tasks" onSubmit={submitHandler}>
+      <form method="POST" action="https://dl-final.herokuapp.com/api/tasks" onSubmit={submitHandler}>
         <div>
           <label htmlFor="name">
             <input type="text" name="name" placeholder="Title" />

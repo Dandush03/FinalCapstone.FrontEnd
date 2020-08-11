@@ -5,7 +5,7 @@ const validation = (id, e) => {
   e.preventDefault();
   const token = sessionStorage.getItem('token');
   const data = { task: { end: Date.now() } };
-  const url = `/api/tasks/${id}`;
+  const url = `https://dl-final.herokuapp.com/api/tasks/${id}`;
   const config = {
     method: 'PATCH',
     mode: 'cors',
