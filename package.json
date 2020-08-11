@@ -16,7 +16,6 @@
   },
   "license": "MIT",
   "readmeFilename": "README.md",
-  "homepage": "https://dandush03.github.io/FinalCapstone.FrontEnd/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",

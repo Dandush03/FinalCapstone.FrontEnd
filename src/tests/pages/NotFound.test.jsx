@@ -2,7 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { render } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import { NotFound } from '../../pages/index';
+import { NotFound } from '../../pages';
 import storeConfig from '../../store';
 
 const store = storeConfig();

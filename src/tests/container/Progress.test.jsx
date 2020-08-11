@@ -2,7 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { render } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import { Progress } from '../../container/index';
+import { Progress } from '../../containers';
 import storeConfig from '../../store';
 
 const store = storeConfig();
@@ -17,5 +17,5 @@ test('renders learn react link', () => {
   );
   const linkElement = container.firstChild;
   const subLinkElement = linkElement.firstChild.classList.contains('selection');
-  expect(subLinkElement).toBe(true);
+  expect(subLinkElement).toBe(false);
 });

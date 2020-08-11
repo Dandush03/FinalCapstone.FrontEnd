@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes, { oneOfType } from 'prop-types';
 
-const validation = (id) => {
-  const data = { task: { end: Date.now() } };
+const validation = (id, e) => {
+  e.preventDefault();
   const token = sessionStorage.getItem('token');
+  const data = { task: { end: Date.now() } };
+  const url = `/api/tasks/${id}`;
   const config = {
     method: 'PATCH',
     mode: 'cors',
@@ -14,11 +16,13 @@ const validation = (id) => {
       'Content-Type': 'application/json',
       Authorization: token,
     },
-    referrerPolicy: 'no-referrer',
     body: JSON.stringify(data),
   };
-  fetch(`/api/tasks/${id}`, config)
-    .then((response) => response.json())
+  fetch(url, config)
+    .then((response) => {
+      window.location.reload(false);
+      return response.json();
+    })
     // eslint-disable-next-line no-console
     .catch((error) => console.log(error));
 };
@@ -27,7 +31,7 @@ export default function TaskPopUp({ timer, task }) {
   return (
     <div className="new-task">
       <h1>{task.name}</h1>
-      <form onSubmit={() => validation(task.id)}>
+      <form onSubmit={(e) => validation(task.id, e)}>
         <span>{timer}</span>
         <button type="submit"><span>Stop</span></button>
       </form>
