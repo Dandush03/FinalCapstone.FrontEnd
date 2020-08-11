@@ -40,7 +40,10 @@ export default function Progress() {
   }, []);
 
   useEffect(() => {
-    dispatch(loadData(range));
+    const token = sessionStorage.getItem('token');
+    if (token) {
+      dispatch(loadData(range));
+    }
   }, [dispatch, range]);
 
   const handlerChanger = (e) => {
