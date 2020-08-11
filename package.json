@@ -1,10 +1,10 @@
 {
-  "name": "dev-webs",
-  "version": "0.1.3",
+  "name": "dl-final-capstone-front-end",
+  "version": "0.1.0",
   "private": false,
-  "proxy": "http://localhost:3001",
+  "proxy": "https://dl-final.herokuapp.com/",
   "repository": {
-    "url": "https://github.com/Dandush03/dev-webs-redux",
+    "url": "https://github.com/Dandush03/FinalCapstone.BackEnd",
     "type": "git"
   },
   "author": {
@@ -12,11 +12,11 @@
     "email": "info@dev-webs.net"
   },
   "bugs": {
-    "url": "https://github.com/Dandush03/dev-webs-redux/issues"
+    "url": "https://github.com/Dandush03/FinalCapstone.BackEnd/issues"
   },
   "license": "MIT",
   "readmeFilename": "README.md",
-  "homepage": "https://dev-webs.net",
+  "homepage": "https://dandush03.github.io/FinalCapstone.FrontEnd/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -40,9 +40,12 @@
     "eslint-plugin-jsx-a11y": "6.3.0",
     "eslint-plugin-react": "7.20.0",
     "eslint-plugin-react-hooks": "4",
+    "gh-pages": "^3.1.0",
     "sass-lint": "^1.13.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
