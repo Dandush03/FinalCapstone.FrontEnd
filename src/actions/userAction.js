@@ -48,6 +48,36 @@ const loginUser = (data) => {
   };
 };
 
+const registrateUser = (data) => {
+  const userData = data;
+  return (dispatch) => {
+    const url = '/api/auth/signup';
+    const config = {
+      method: 'POST',
+      mode: 'cors',
+      cache: 'no-cache',
+      credentials: 'same-origin',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(userData),
+    };
+    fetch(url, config)
+      .then((response) => response.json())
+      .then((json) => {
+        if (json.auth_token) {
+          const token = json.auth_token;
+          sessionStorage.setItem('token', token);
+          return dispatch(getUserSuccessfully());
+        }
+        return (dispatch(ErrMsg(json.message)));
+      })
+      // eslint-disable-next-line no-console
+      .catch((err) => console.log(err));
+  };
+};
+
 const getStatus = (token) => (dispatch) => {
   const url = '/api/auth';
   const config = {
@@ -74,5 +104,5 @@ const getStatus = (token) => (dispatch) => {
 };
 
 export {
-  loginUser, getStatus, ErrMsg, ErrClear, getUserLogout,
+  loginUser, getStatus, ErrMsg, ErrClear, getUserLogout, registrateUser,
 };

@@ -72,6 +72,21 @@ $error-c: #d02d2d;
       text-align: center;
       top: 40px;
     }
+
+  }
+
+  &.registration {
+    form {
+      height: fit-content;
+
+      >div {
+        margin: 10px 0;
+      }
+
+      .errors-msg {
+        top: 20px;
+      }
+    }
   }
 
   a {
