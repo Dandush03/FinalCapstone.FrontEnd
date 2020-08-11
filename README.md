@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# FinalCapstone.FrontEnd
-=======
 <h2 align="center"> Dev-Webs-Redux Template 
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -119,4 +116,3 @@ Give a ⭐️ if you like this project!
 [linkedin-url2]: https://www.linkedin.com/in/daniel-laloush/
 [hireable]: https://cdn.rawgit.com/hiendv/hireable/master/styles/flat/yes.svg
 [hireable-url]: https://www.linkedin.com/in/daniel-laloush/
->>>>>>> 890a3947040e2df7eaf17bf7ad0d33ca1ed51e37
