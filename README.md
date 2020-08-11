@@ -13,14 +13,18 @@
 
   <p align="center">
     <br />
-    <a href="https://github.com/Dandush03/Final-Project"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Dandush03/FinalCapstone.FrontEnd"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://dl-final.herokuapp.com/">View Live Demo</a>
+    <a href="https://dl-final-webapp.herokuapp.com/">View Live Demo</a>
     ·
-    <a href="https://github.com/Dandush03/Final-Project/issues">Report Bug</a>
+    <a href="https://github.com/Dandush03/FinalCapstone.FrontEnd/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Dandush03/Final-Project/issues">Request Feature</a>
+    <a href="https://github.com/Dandush03/FinalCapstone.FrontEnd/issues">Request Feature</a>
+    ·
+    <a href="https://github.com/Dandush03/FinalCapstone.BackEnd">API Repo</a>
+    ·
+    <a href="https://github.com/Dandush03/FinalCapstone.FrontEnd">WebApp Repo</a>
   </p>
 
 </p>
@@ -66,36 +70,33 @@ The project was developed using the following technologies:
 Clone the Repository
 
 ```Shell
-user@pc:~$ git clone https://github.com/Dandush03/Final-Project.git
+user@pc:~$ git clone https://github.com/Dandush03/FinalCapstone.FrontEnd.git
 ```
 
 Click on the console and to go to the folder that was created
 
 ```Shell
-user@pc:~$ cd Final-Project
+user@pc:~$ cd FinalCapstone.FrontEnd
 ```
 
 ```Shell
-user@pc:~$ bundle; yarn --cwd client 
-# If you're using a linux eviroment then:
-# bundle && yarn --cwd client 
+user@pc:~$ yarn
 ```
 
 ```Shell
-user@pc:~$ rake start
+user@pc:~$ yarn start
 ```
 
 Open your browser on [http://localhost:3000](http://localhost:3000)
 
 ## Testing
 
-After cloning [this repository](https://github.com/Dandush03/Final-Project.git) you can run its test by running the following commands, inside the root folder of the project 
+After cloning [this repository](https://github.com/Dandush03/FinalCapstone.FrontEnd.git) you can run its test by running the following commands, inside the root folder of the project 
 
 ```Shell
-user@pc:~$ yarn --cwd client test; rspec
-# If you're using a linux eviroment then:
-# yarn --cwd client test && rspec
+user@pc:~$ yarn test
 ```
+
 this way once it finished testing jest it will lunch RSpec right away 
 
 ## Contact
@@ -108,7 +109,7 @@ this way once it finished testing jest it will lunch RSpec right away
 
 <p align="center">
 
-  Project Link: [https://github.com/Dandush03/Final-Project](https://github.com/Dandush03/Final-Project)
+  Project Link: [https://github.com/Dandush03/FinalCapstone.FrontEnd](https://github.com/Dandush03/FinalCapstone.FrontEnd)
 
 </p>
 
@@ -122,7 +123,7 @@ Thanks to [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) for
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Dandush03/Final-Project/issues).
+Feel free to check the [issues page](https://github.com/Dandush03/FinalCapstone.FrontEnd/issues).
 
 ## Show your support
 
@@ -130,15 +131,15 @@ Give a ⭐️ if you like this project!
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [contributors-shield]: https://img.shields.io/github/contributors/Dandush03/React-Calculator.svg?style=flat-square
-[contributors-url]: https://github.com/Dandush03/Final-Project/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Dandush03/Final-Project.svg?style=flat-square
-[forks-url]: https://github.com/Dandush03/Final-Project/network/members
-[stars-shield]: https://img.shields.io/github/stars/Dandush03/Final-Project.svg?style=flat-square
-[stars-url]: https://github.com/Dandush03/Final-Project/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Dandush03/Final-Project.svg?style=flat-square
-[issues-url]: https://github.com/Dandush03/Final-Project/issues
-[license-shield]: https://img.shields.io/github/license/Dandush03/Final-Project.svg?style=flat-square
-[license-url]: https://github.com/Dandush03/Final-Project/blob/master/LICENSE.txt
+[contributors-url]: https://github.com/Dandush03/FinalCapstone.FrontEnd/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Dandush03/FinalCapstone.FrontEnd.svg?style=flat-square
+[forks-url]: https://github.com/Dandush03/FinalCapstone.FrontEnd/network/members
+[stars-shield]: https://img.shields.io/github/stars/Dandush03/FinalCapstone.FrontEnd.svg?style=flat-square
+[stars-url]: https://github.com/Dandush03/FinalCapstone.FrontEnd/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Dandush03/FinalCapstone.FrontEnd.svg?style=flat-square
+[issues-url]: https://github.com/Dandush03/FinalCapstone.FrontEnd/issues
+[license-shield]: https://img.shields.io/github/license/Dandush03/FinalCapstone.FrontEnd.svg?style=flat-square
+[license-url]: https://github.com/Dandush03/FinalCapstone.FrontEnd/blob/master/LICENSE.txt
 [linkedin-shield2]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url2]: https://www.linkedin.com/in/daniel-laloush/
 [hireable]: https://cdn.rawgit.com/hiendv/hireable/master/styles/flat/yes.svg
