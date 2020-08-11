@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="add.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 135.46666 92.604169"
+   height="350"
+   width="512">
+  <defs
+     id="defs2">
+    <rect
+       x="23.786987"
+       y="106.64054"
+       width="44.128998"
+       height="9.7244625"
+       id="rect23" />
+    <filter
+       id="filter93"
+       style="color-interpolation-filters:sRGB"
+       inkscape:menu-tooltip="Light areas turn to black"
+       inkscape:menu="Color"
+       inkscape:label="Black Light">
+      <feColorMatrix
+         id="feColorMatrix85"
+         result="result2"
+         type="luminanceToAlpha" />
+      <feComposite
+         id="feComposite87"
+         result="result4"
+         k3="2"
+         in="result2"
+         operator="arithmetic"
+         in2="SourceGraphic"
+         k1="0"
+         k2="0"
+         k4="0" />
+      <feBlend
+         id="feBlend89"
+         in2="result2"
+         result="result3"
+         mode="multiply"
+         in="result4" />
+      <feComposite
+         id="feComposite91"
+         in="result3"
+         operator="in"
+         in2="SourceGraphic" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="0"
+     inkscape:window-x="415"
+     inkscape:window-height="1040"
+     inkscape:window-width="1274"
+     units="px"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="g150"
+     inkscape:document-units="mm"
+     inkscape:cy="180.61157"
+     inkscape:cx="266.15695"
+     inkscape:zoom="7.9195959"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Items"
+     id="layer3"
+     inkscape:groupmode="layer">
+    <g
+       transform="translate(0,-7.5835947)"
+       id="g39">
+      <g
+         style="fill:#e6e6e6"
+         transform="matrix(0.77747025,0,0,0.73552902,13.190094,2.3108378)"
+         id="g150">
+        <rect
+           y="17.496838"
+           x="52.154705"
+           height="60.000137"
+           width="8.5714464"
+           id="rect125"
+           style="fill:#e6e6e6;stroke-width:0.264999;stroke-dasharray:0.264999, 3.18" />
+        <rect
+           y="60.35408"
+           x="40.154858"
+           height="17.142893"
+           width="8.5714436"
+           id="rect127"
+           style="fill:#e6e6e6;stroke-width:0.264999;stroke-dasharray:0.264999, 3.18" />
+        <rect
+           y="38.06831"
+           x="26.440363"
+           height="39.428661"
+           width="8.5714464"
+           id="rect129"
+           style="fill:#e6e6e6;stroke-width:0.264999;stroke-dasharray:0.264999, 3.18" />
+        <rect
+           y="80.92556"
+           x="26.440529"
+           height="5.1428709"
+           width="60.000145"
+           id="rect131"
+           style="fill:#e6e6e6;stroke-width:0.264999;stroke-dasharray:0.264999, 3.18" />
+        <rect
+           y="68.152557"
+           x="77.869217"
+           height="9.3444138"
+           width="8.48915"
+           id="rect133"
+           style="fill:#e6e6e6;stroke-width:0.264999;stroke-dasharray:0.264999, 3.18" />
+        <rect
+           y="14.124748"
+           x="89.869102"
+           height="41.086567"
+           width="9.9458704"
+           id="rect135"
+           style="fill:#e6e6e6;stroke-width:0.264999;stroke-dasharray:0.264999, 3.18" />
+        <rect
+           y="29.496971"
+           x="74.440475"
+           height="10.285757"
+           width="39.428684"
+           id="rect137"
+           style="fill:#e6e6e6;stroke-width:0.264999;stroke-dasharray:0.264999, 3.18" />
+        <path
+           sodipodi:nodetypes="ccccc"
+           d="m 66.052902,54.935696 8.473722,0.03064 -0.08594,22.530631 h -8.38778 z"
+           style="fill:#e6e6e6;stroke-width:0.264999;stroke-dasharray:0.264999, 3.18"
+           id="rect139" />
+      </g>
+      <text
+         transform="matrix(3.2406427,0,0,3.2406427,-53.645199,-271.20191)"
+         style="font-size:6.64416px;line-height:1.25;font-family:HelveticaNeue;-inkscape-font-specification:HelveticaNeue;white-space:pre;shape-inside:url(#rect23);fill:#e6e6e6;"
+         id="text21"
+         xml:space="preserve"><tspan
+           x="23.787109"
+           y="112.92522"><tspan
+             style="shape-inside:url(#rect23);fill:#e6e6e6">Add Task</tspan></tspan></text>
+    </g>
+  </g>
+</svg>

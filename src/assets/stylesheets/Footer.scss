@@ -1,0 +1,69 @@
+@import './Global';
+
+$opened-1: rgba(255, 0, 0, .7);
+$opened-2: rgba(168, 4, 4, .7);
+
+@keyframes counter {
+  0% { background-color: $blue-light;}
+  50% {background-color: $blue;}
+  100% { background-color: $blue-light;}
+}
+
+@keyframes opened {
+  0% { background-color: $opened-1;}
+  50% {background-color: $opened-2;}
+  100% { background-color: $opened-1;}
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+
+  a,
+  button {
+    background-color: $gray;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0;
+    width: 25%;
+
+    img {
+      align-self: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    &:hover {
+      background-color: $blue-regular;
+    }
+
+    &.selected {
+      background-color: $blue;
+
+      &:hover {
+        background-color: $blue-regular;
+      }
+    }
+
+    &.warning {
+      animation: counter 4s  infinite ease-in-out;
+      display: flex;
+      font-family: $font-timer;
+      font-size: 300%;
+      justify-content: center;
+
+      span {
+        align-self: center;
+      }
+
+      .open {
+        animation: opened 3s ease-in-out infinite;
+        height: 100%;
+      }
+    }
+  }
+}
