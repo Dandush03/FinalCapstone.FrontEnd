@@ -2,6 +2,7 @@
   "name": "dl-final-capstone-front-end",
   "version": "0.1.0",
   "private": false,
+  "root": "build/",
   "proxy": "https://dl-final.herokuapp.com/",
   "repository": {
     "url": "https://github.com/Dandush03/FinalCapstone.BackEnd",
