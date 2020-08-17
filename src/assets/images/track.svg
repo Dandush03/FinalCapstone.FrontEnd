@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512"
+   height="350"
+   viewBox="0 0 135.46666 92.604169"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="track.svg">
+  <defs
+     id="defs2">
+    <rect
+       id="rect23"
+       height="9.7244625"
+       width="44.128998"
+       y="106.64054"
+       x="23.786987" />
+    <filter
+       inkscape:label="Black Light"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Light areas turn to black"
+       style="color-interpolation-filters:sRGB"
+       id="filter93">
+      <feColorMatrix
+         type="luminanceToAlpha"
+         result="result2"
+         id="feColorMatrix85" />
+      <feComposite
+         k4="0"
+         k2="0"
+         k1="0"
+         in2="SourceGraphic"
+         operator="arithmetic"
+         in="result2"
+         k3="2"
+         result="result4"
+         id="feComposite87" />
+      <feBlend
+         in="result4"
+         mode="multiply"
+         result="result3"
+         in2="result2"
+         id="feBlend89" />
+      <feComposite
+         in2="SourceGraphic"
+         operator="in"
+         in="result3"
+         id="feComposite91" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="349.51838"
+     inkscape:cy="241.32051"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g35"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Items">
+    <g
+       transform="translate(0,-7.5835955)"
+       id="g35">
+      <text
+         xml:space="preserve"
+         id="text21"
+         style="font-size:6.64416px;line-height:1.25;font-family:HelveticaNeue;-inkscape-font-specification:HelveticaNeue;white-space:pre;shape-inside:url(#rect23);fill:#e6e6e6;"
+         transform="matrix(3.2406427,0,0,3.2406427,-59.62368,-271.20191)"><tspan
+           x="23.787109"
+           y="112.92522"><tspan
+             style="shape-inside:url(#rect23)">Trak Tasks</tspan></tspan></text>
+      <g
+         id="g72"
+         transform="matrix(6.3507456,0,0,5.3977542,-512.53327,-600.1045)">
+        <g
+           transform="matrix(0.85714286,0,0,1.3886425,13.052834,-47.349407)"
+           id="g27">
+          <g
+             id="g33">
+            <path
+               sodipodi:nodetypes="ccccc"
+               d="m 94.232239,117.54683 1.174777,0.92084 -4.137583,4.0911 -1.26897,-0.6688 z"
+               style="fill:#e6e6e6;stroke-width:0.264999;stroke-dasharray:0.264999, 3.18"
+               id="rect56" />
+            <path
+               sodipodi:nodetypes="ccccc"
+               d="m 91.018493,117.83564 5.211887,-0.92287 -0.106302,3.42541 -1.630334,-1.78701 z"
+               style="fill:#e6e6e6;stroke-width:0.264999;stroke-dasharray:0.264999, 3.18"
+               id="rect58" />
+            <path
+               sodipodi:nodetypes="ccccc"
+               d="m 89.025204,120.17281 2.870874,0.8525 -0.626645,1.53346 -2.967633,-1.56542 z"
+               style="fill:#e6e6e6;stroke-width:0.264999;stroke-dasharray:0.264999, 3.18"
+               id="rect60" />
+            <path
+               sodipodi:nodetypes="cccc"
+               d="m 86.509299,122.91313 2.515905,-2.74032 1.513431,0.42872 z"
+               style="fill:#e6e6e6;stroke-width:0.264999;stroke-dasharray:0.264999, 3.18"
+               id="rect62" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

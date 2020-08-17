@@ -1,0 +1,98 @@
+@import 'Global';
+$error-c: #d02d2d;
+
+.user-form {
+  background-color: $blue;
+  display: flex;
+  flex-direction: column;
+  font-family: $font;
+  height: calc(var(--app-height) + 50px + 70px);
+  justify-content: center;
+  width: 100vw;
+
+  label,
+  button,
+  a,
+  input {
+    outline: 0;
+  }
+
+  >form {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-between;
+    max-width: 500px;
+    overflow-y: auto;
+    position: relative;
+    width: 100%;
+
+    >div {
+      padding: 10px 30px;
+      width: 100%;
+    }
+
+    label {
+      color: $green-lighter;
+      display: flex;
+
+      flex-direction: column;
+      margin: 10px 0;
+      text-transform: capitalize;
+      width: 100%;
+    }
+
+    span {
+      font-size: large;
+      padding: 5px 10px;
+    }
+
+    input {
+      border-radius: 10px;
+      font-size: large;
+      padding: 10px;
+      width: 100%;
+
+      &[type='submit'] {
+        align-self: center;
+        width: 80%;
+      }
+    }
+
+    h1 {
+      color: $green-lighter;
+      margin: 0;
+      text-align: center;
+    }
+
+    .errors-msg {
+      color: $error-c;
+      position: absolute;
+      text-align: center;
+      top: 40px;
+    }
+
+  }
+
+  &.registration {
+    form {
+      height: fit-content;
+
+      >div {
+        margin: 10px 0;
+      }
+
+      .errors-msg {
+        top: 20px;
+      }
+    }
+  }
+
+  a {
+    color: $white;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+  }
+}

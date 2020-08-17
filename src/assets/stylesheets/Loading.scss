@@ -1,0 +1,120 @@
+$bg-color: rgb(255, 255, 255);
+
+
+@keyframes showHideDot {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOutBorder {
+  from {
+    border-radius: 0%;
+    height: 100vh;
+    opacity: 1;
+    width: 100vw;
+  }
+
+  to {
+    border-radius: 100%;
+    height: 300px;
+    opacity: 1;
+    width: 300px;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    border-radius: 100%;
+    height: 300px;
+    opacity: 1;
+    width: 300px;
+  }
+
+  to {
+    border-radius: 100%;
+    height: 0;
+    opacity: 0;
+    width: 0;
+  }
+}
+
+.loading-container {
+  background-color: $bg-color;
+  bottom: -9999px;
+  height: 100vh;
+  left: -9999px;
+  margin: auto;
+  opacity: 1;
+  overflow: hidden;
+  position: fixed;
+  right: -9999px;
+  top: -9999px;
+  width: 100vw;
+  z-index: 9999999;
+
+  .logo-img {
+    align-self: center;
+    max-width: 70vw;
+  }
+
+  .loading-page {
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    overflow: hidden;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+  }
+
+  .dot {
+    animation: showHideDot 2.5s ease-in-out infinite;
+    display: inline;
+    font-size: 3.5em;
+    margin-left: .2em;
+    margin-right: .2em;
+    opacity: 0;
+    position: relative;
+    top: -20px;
+
+    &.one {
+      animation-delay: .2s;
+    }
+
+    &.two {
+      animation-delay: .4s;
+    }
+
+    &.three {
+      animation-delay: .6s;
+    }
+
+    &.fourth {
+      animation-delay: .8s;
+    }
+  }
+
+  &.close-loading {
+    animation: fadeOutBorder 1s ease-in, fadeOut .5s ease-in 1s;
+    height: 0;
+    opacity: 0;
+    width: 0;
+  }
+}

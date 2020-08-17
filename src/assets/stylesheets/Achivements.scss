@@ -1,0 +1,51 @@
+@import './Global';
+
+$white: #fff;
+
+.achivements {
+  border-radius: 5px;
+}
+
+.achivement {
+  background-color: $white;
+  display: flex;
+  margin: 15px;
+  overflow: hidden;
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  img {
+    height: 125px;
+    max-width: 50%;
+    padding: 10px;
+  }
+
+  h3,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .progress-container {
+    align-self: center;
+    color: $gray;
+    font-family: $font;
+
+    p {
+      color: $gray-lighter;
+    }
+
+    span {
+      color: $gray;
+      font-family: $font-timer;
+      font-size: 175%;
+      font-weight: bolder;
+      line-height: 100%;
+      margin-left: 10px;
+      margin-right: 5px;
+    }
+
+  }
+}
