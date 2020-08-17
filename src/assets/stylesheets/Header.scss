@@ -1,0 +1,16 @@
+@import './Global';
+
+header {
+  display: flex;
+  justify-content: center;
+
+  h1 {
+    align-self: center;
+    color: $white;
+    font-size: 150%;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,94 @@
+@import './Global';
+
+
+$botton-c: #fff;
+$white: #f5f5f5;
+$botton-bg: rgb(157, 197, 48);
+$h1-bg: $blue;
+
+@keyframes open {
+  from {
+    bottom: 70px;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+  }
+
+  to {
+    bottom: 70px;
+    height: 125px;
+    overflow: hidden;
+    position: fixed;
+  }
+}
+
+.new-task {
+  animation: open ease-in .4s;
+  background-color: $white;
+  border: 1px $blue outset;
+  border-top-right-radius: 10px;
+  bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  height: 125px;
+  justify-content: space-around;
+  left: 0;
+  position: fixed;
+  width: 70%;
+
+  h1,
+  span,
+  button {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    background-color: $h1-bg;
+    border-radius: 10px;
+    color: $botton-c;
+    font-size: 120%;
+    font-weight: bolder;
+    line-height: 100%;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80%;
+  }
+
+  button {
+    align-self: center;
+    background-color: $botton-bg;
+    border-radius: 10px;
+    color: $botton-c;
+    display: flex;
+    font-size: large;
+    font-weight: bolder;
+    height: 50%;
+    justify-content: center;
+    padding: 20px;
+    text-transform: uppercase;
+    width: 70px;
+
+    span {
+      align-self: center;
+      font-family: $font;
+      font-size: large;
+    }
+  }
+
+  span {
+    align-self: center;
+    font-family: $font-timer;
+    font-size: 300%;
+    line-height: 100%;
+  }
+
+  form {
+    background-color: $botton-c;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+}
